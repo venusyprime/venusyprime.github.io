@@ -1,2 +1,6 @@
 name: VEI.space
 markdown: kramdown
+description: >
+A little place where I can jot down my thoughts and various PowerShell scripts.
+baseurl: ""
+twitter_username: venusyprime

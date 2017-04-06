@@ -708,14 +708,14 @@ dt {
   -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
-#header nav {
+header nav,footer {
   max-width: 650px;
   margin: 0 auto;
   padding: 0 10px;
-  background: blue;
+  background: #353535;
   margin: 6px auto;
 }
-#header nav li {
+header nav li, footer li {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   list-style: none;
@@ -725,15 +725,15 @@ dt {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
-#header nav li a {
+header nav li a, footer li a {
   color: white;
-  border: 1px solid #5d910b;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
-  background: -webkit-linear-gradient(#93bd20, #659e10);
-  background: -moz-linear-gradient(#93bd20, #659e10);
-  background: -o-linear-gradient(#93bd20, #659e10);
-  background: -ms-linear-gradient(#93bd20, #659e10);
-  background: linear-gradient(#93bd20, #659e10);
+  border: 1px solid #880b91;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b320bd), color-stop(100%, #8f1098));
+  background: -webkit-linear-gradient(#b320bd, #8f1098);
+  background: -moz-linear-gradient(#b320bd, #8f1098);
+  background: -o-linear-gradient(#b320bd, #8f1098);
+  background: -ms-linear-gradient(#b320bd, #8f1098);
+  background: linear-gradient(#b320bd, #8f1098);
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -744,7 +744,7 @@ dt {
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
-  background-color: #93bd20;
+  background-color: #b320bd;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
@@ -752,29 +752,29 @@ dt {
   display: inline-block;
   text-align: center;
 }
-#header nav li a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
-  background: -webkit-linear-gradient(#749619, #527f0e);
-  background: -moz-linear-gradient(#749619, #527f0e);
-  background: -o-linear-gradient(#749619, #527f0e);
-  background: -ms-linear-gradient(#749619, #527f0e);
-  background: linear-gradient(#749619, #527f0e);
-  background-color: #659e10;
-  border: 1px solid #527f0e;
+header nav li a:hover, footer li a:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8e1996), color-stop(100%, #770e7f));
+  background: -webkit-linear-gradient(#8e1996, #770e7f);
+  background: -moz-linear-gradient(#8e1996, #770e7f);
+  background: -o-linear-gradient(#8e1996, #770e7f);
+  background: -ms-linear-gradient(#8e1996, #770e7f);
+  background: linear-gradient(#8e1996, #770e7f);
+  background-color: #8f1098;
+  border: 1px solid #770e7f;
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
 }
-#header nav li.fork {
+header nav li.fork, footer li.fork {
   float: left;
   margin-left: 0px;
 }
-#header nav li.downloads {
+header nav li.downloads, footer li.downloads {
   float: right;
   margin-left: 6px;
 }
-#header nav li.title {
+header nav li.title, footer li.title {
   float: right;
   margin-right: 10px;
   font-size: 11px;

@@ -4,7 +4,7 @@ title:  "Sometimes It's The Basics"
 date:   2017-05-12 12:00:00 +0000
 categories: powershell
 ---
-I've been playing around with PowerShell DSC lately, improving on my home lab (although it's quite limited by the lack of compute resources/decent storage). Today, I wanted to get [https://msdn.microsoft.com/en-us/powershell/dsc/secureMOF](credential encryption) setup. So, I made a helper function to generate the certs, export files and write the certificate thumbprint to the console - of course, in production with an existing AD infrastructure, I'd use ADCS (and one of the purposes of this home lab is to learn how to set it up).
+I've been playing around with PowerShell DSC lately, improving on my home lab (although it's quite limited by the lack of compute resources/decent storage). Today, I wanted to get [credential encryption](https://msdn.microsoft.com/en-us/powershell/dsc/secureMOF) setup. So, I made a helper function to generate the certs, export files and write the certificate thumbprint to the console - of course, in production with an existing AD infrastructure, I'd use ADCS (and one of the purposes of this home lab is to learn how to set it up).
 
 Here is the relevant helper function. **Do not copy and paste this yet**, for the reason I'm going to explain below:
 

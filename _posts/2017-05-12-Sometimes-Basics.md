@@ -59,12 +59,8 @@ $ConfigData = @{
 Whenever I tried running this configuration, the same thing would happen:
 
 ``` powershell
-ConvertTo-MOFInstance : System.ArgumentException error processing property 'Password' OF TYPE 'MSFT_Credential': Cannot 
-load encryption certificate. The certificate setting 'C:\Users\Charles\OneDrive\Git\DSC_LabSetup\DSCCertificate.cer' 
-does not represent a valid base-64 encoded certificate, nor does it represent a valid certificate by file, directory, 
-thumbprint, or subject name.
-At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguration\PSDesiredStateConfiguration.psm1:310 
-char:13
+ConvertTo-MOFInstance : System.ArgumentException error processing property 'Password' OF TYPE 'MSFT_Credential': Cannot load encryption certificate. The certificate setting 'C:\Users\Charles\OneDrive\Git\DSC_LabSetup\DSCCertificate.cer' does not represent a valid base-64 encoded certificate, nor does it represent a valid certificate by file, directory, thumbprint, or subject name.
+At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguration\PSDesiredStateConfiguration.psm1:310 char:13
 +             ConvertTo-MOFInstance MSFT_Credential $newValue
 +             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : InvalidOperation: (:) [Write-Error], InvalidOperationException
@@ -76,7 +72,6 @@ So, what's the problem here? Some Googling and Binging gave nothing useful (if y
 `[string]$PublicFilePath = "$psscriptroot\DSCCertficate.cer"`
 
 `CertificateFile = "$PSScriptRoot\DSCCertificate.cer"`
-
 
 I made a typo when setting up the helper function for the export! 🤦 I only noticed while I was tab-completing the certificate names to copy the PFX to the target node (thanks to the ability of Copy-Item to copy to a PSSession, I didn't even need to set up a SMB share with custom permissions due to the authoring node being a workgroup machine).
 
